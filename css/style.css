@@ -1,0 +1,455 @@
+:root{
+    --blue:#3DCFD3;
+    --dark:#161616;
+    --white:#ffffff;
+    --lgray:#898989;
+    --lwhite:#F2F2F2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+}
+
+.do-center{
+    align-items: center;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 100%;
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 90%, 0% 100%);
+}
+
+header h9{
+    font-weight: 100;
+    color: var(--blue);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 4rem;
+}
+
+header nav{
+    right: 0rem;
+    left: 0rem;
+    background: var(--dark);
+    padding-top: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+header nav .left a{
+    font-weight: 500;
+    outline: none;
+    margin-right: 2rem;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header nav .left a:hover{
+    color: var(--blue);
+    transition: all 0.3s;
+}
+
+header nav .logo{
+    margin-right: 3rem;
+}
+
+header nav .right button{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--white);
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    border-color: transparent;
+    background: var(--blue);
+}
+
+header nav .right button a{
+    outline: none;
+}
+
+header nav .right button:hover{
+    background: none;
+    color: var(--blue);
+    transition: 0.3s;
+    cursor: pointer;
+    border-color: var(--blue);
+}
+
+header .intro{
+    padding: 1.5rem;
+}
+
+header .intro .left img{
+    background: var(--dark);
+    border: 1px solid var(--dark);
+    border-radius: 50px 0 50px 0;
+    margin-right: 8rem;
+    margin-top: 0rem;
+    margin-bottom: 6rem;
+}
+
+header .intro .right{
+    margin-top: -12rem;
+}
+
+header .intro .right h6{
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: var(--blue);
+    line-height: 3;
+}
+
+header .intro .right h1{
+    line-height: 1;
+    font-weight: 100;
+    font-size: 48px;
+    color: var(--white);
+    font-family: sans-serif;
+}
+
+header .intro .right h1 span{
+    font-size: 60px;
+    color: var(--blue);
+}
+
+header .intro .right p{
+    margin-left: 3rem;
+    margin-top: 40px;
+    margin-right: 20rem;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: var(--white);
+}
+
+header .intro .right button{
+    margin-top: 3rem;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--blue);
+    border-radius: 50px;
+    border-color: var(--blue);
+    padding: 1rem 3rem;
+    background: none;
+}
+
+header .intro .right button:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+
+section.about{
+    margin-top: 3rem;
+    padding: 6rem;
+}
+
+section .container .left{
+    margin-right: 3rem;
+}
+
+section .container .right{
+    font-size: 26px;
+    font-family: sans-serif;
+}
+
+section .container .right h1{
+    font-weight: 100;
+}
+
+section .container .right h3{
+    font-size: 26px;
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+section .container .right span{
+    color: var(--blue);
+}
+
+section .container .right p{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding-right: 16rem;
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+
+
+section .container .right .social-join{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+section .container .right .social-join .join{
+    font-family: sans-serif;
+    font-size: medium;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+section .container .right .social-join .join span{
+    color: #3DCFD3;
+}
+
+section .container .right .social-join .social img{
+    border-radius: 1px;
+    height: 50px;
+    width: 50px;
+}
+
+section .container .right .social-join .social a{
+    outline: none;
+}
+
+section .container .right .social-join .social img:hover{
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+section.services{
+    margin-top: 3rem;
+    padding: 6rem;
+    background-color: rgb(207, 207, 207);
+}
+
+section.services .container .heading{
+    margin-bottom: 6rem;
+}
+
+section.services .container .heading h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+section.services .container .heading h1 span{
+    color: var(--blue);
+}
+
+section.services .container .heading p{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 3rem;
+}
+
+section.services .container .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+}
+
+section.services .container .cards .card{
+    border-radius: 1px;
+    position: relative;
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    padding-top: 4rem;
+}
+
+section.services .container .cards .card img{
+    border-radius: 1px;
+    height: 7.5rem;
+    width: 7.5rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services .container .cards .card .text h2{
+    color: var(--blue);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+section.services .container .cards .card .text p{
+    text-align: center;
+    line-height: 1.3rem;
+    font-family: sans-serif;
+}
+
+section.services .container .cards .card:hover{
+    background-color: var(--dark);
+    color: var(--lwhite);
+    transition: 0.4s;
+    box-shadow: 0px 30px 60px 0 var(--lgray);
+    cursor: pointer;
+}
+
+
+section.skills .container .heading h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+}
+
+section.skills{
+    padding: 6rem;
+}
+
+section.skills .container .heading{
+    margin-bottom: 6rem;
+}
+
+section.skills .container .heading p{
+    margin-top: 0.7rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+section.skills .container span{
+    color: #3DCFD3;
+}
+
+section.skills .container .cards .card h1{
+    font-weight: 100;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+
+section.skills .container .cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    position: relative;
+}
+
+section.skills .container .cards .card{
+    border-radius: 1px;
+    padding: 3rem 2rem;
+    background: var(--lgray);
+}
+
+section.skills .container .cards .card p{
+    font-family: sans-serif;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+section.skills .container .cards .card ul li{
+    margin-left: 3.5rem;
+    text-align: left;
+    font-family: sans-serif;
+    line-height: 1.3rem;
+}
+
+section.skills .container .cards .card:hover{
+    background: var(--dark);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0px 30px 60px 0 var(--lgray);;
+}
+
+section.freelance{
+    background: var(--dark);
+    padding: 6rem;
+    clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 100%, 0 100%);
+}
+
+section.freelance .container{
+    padding-top: 4rem;
+    text-align: center;
+}
+
+section.freelance .container .heading h1{
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 38px;
+    margin-bottom: 1rem;
+}
+
+section.freelance .container .heading h1 span{
+    color: var(--blue);
+}
+
+section.freelance .container .heading p{
+    font-family: sans-serif;
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+
+section.freelance .container .buttons button{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--blue);
+    border-radius: 50px;
+    border-color: var(--blue);
+    padding: 1rem 3rem;
+    background: none;
+}
+
+section.freelance .container .buttons button:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+section.footer{
+    background: var(--dark);
+}
+
+section.footer .copyright{
+    padding: 2rem 2rem;
+}
+
+section.footer .copyright p{
+    text-align: right;
+    font-family: sans-serif;
+    color: var(--white);
+}
+
+.go-to-top{
+    display: inline-flexbox;
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+}
+
+
+
